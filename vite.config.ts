@@ -1,12 +1,10 @@
-import { defineConfig } from 'vite'
-import devServer from '@hono/vite-dev-server'
-import pages from '@hono/vite-cloudflare-pages'
+import react from "@vitejs/plugin-react";
+import { defineConfig } from "vite";
 
 export default defineConfig({
-  plugins: [
-    pages(),
-    devServer({
-      entry: 'src/index.tsx'
-    })
-  ]
-})
+  build: {
+    minify: true,
+    outDir: "./pages",
+  },
+  plugins: [react()],
+});

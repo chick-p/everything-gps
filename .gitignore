@@ -2,6 +2,7 @@ node_modules
 dist
 .wrangler
 .dev.vars
+pages/
 
 # Change them to your taste:
 wrangler.toml
