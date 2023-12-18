@@ -9,6 +9,7 @@
     "deploy": "$npm_execpath run build && wrangler pages deploy dist"
   },
   "dependencies": {
+    "@hono/zod-validator": "^0.1.11",
     "hono": "^3.11.7",
     "zod": "^3.22.4"
   },
