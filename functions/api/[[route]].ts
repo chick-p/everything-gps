@@ -20,9 +20,28 @@ const locations: Location[] = [];
 const route = app.post("/location", zValidator("json", schema), async (c) => {
   const location = c.req.valid("json");
   locations.push(location);
-  return c.json({
-    message: "posted!",
+
+  const { SLACK_WEBHOOK_URL } = env<{ SLACK_WEBHOOK_URL: string }>(c);
+  const text = `${location.name}\n${location.address}\nhttps://maps.google.com/maps?q=${location.lat},${location.long}`;
+  const response = await fetch(SLACK_WEBHOOK_URL, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      pretext: `New location`,
+      text,
+    }),
   });
+  if (response.status === 200) {
+    return c.json({
+      message: "posted!",
+    });
+  } else {
+    return c.json({
+      message: "failed!",
+    });
+  }
 });
 
 export type AppType = typeof route;
