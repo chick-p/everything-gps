@@ -5,22 +5,22 @@ import { AppType } from "../functions/api/[[route]]";
 
 const App = () => {
   const client = hc<AppType>("/");
-  const $get = client.api.hello.$get;
+  const $post = client.api.location.$post;
 
-  const [data, setData] = useState<InferResponseType<typeof $get>>();
+  const [data, setData] = useState<InferResponseType<typeof $post>>();
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const res = await $get({
-        query: {
-          name: "Pages",
-        },
-      });
-      const responseData = await res.json();
-      setData(responseData);
-    };
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     const res = await $post({
+  //       query: {
+  //         name: "Pages",
+  //       },
+  //     });
+  //     const responseData = await res.json();
+  //     setData(responseData);
+  //   };
+  //   fetchData();
+  // }, []);
 
   return <h1>{data?.message}</h1>;
 };
