@@ -3,7 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "app": "pnpm -F \"app\""
+    "app": "pnpm -F \"app\"",
+    "api": "pnpm -F \"api\""
   },
   "dependencies": {
     "@hono/zod-validator": "^0.1.11",
