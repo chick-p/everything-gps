@@ -1,47 +1,53 @@
 lockfileVersion: '6.0'
 
-dependencies:
-  '@hono/zod-validator':
-    specifier: ^0.1.11
-    version: 0.1.11(hono@3.11.7)(zod@3.22.4)
-  hono:
-    specifier: ^3.11.7
-    version: 3.11.7
-  react:
-    specifier: ^18.2.0
-    version: 18.2.0
-  react-dom:
-    specifier: ^18.2.0
-    version: 18.2.0(react@18.2.0)
-  zod:
-    specifier: ^3.22.4
-    version: 3.22.4
+importers:
 
-devDependencies:
-  '@cloudflare/workers-types':
-    specifier: ^4.20230914.0
-    version: 4.20230914.0
-  '@hono/vite-cloudflare-pages':
-    specifier: ^0.1.0
-    version: 0.1.0(hono@3.11.7)
-  '@hono/vite-dev-server':
-    specifier: ^0.2.0
-    version: 0.2.0
-  '@types/react':
-    specifier: ^18.2.45
-    version: 18.2.45
-  '@types/react-dom':
-    specifier: ^18.2.18
-    version: 18.2.18
-  '@vitejs/plugin-react':
-    specifier: ^4.2.1
-    version: 4.2.1(vite@4.5.0)
-  vite:
-    specifier: ^4.5.0
-    version: 4.5.0
-  wrangler:
-    specifier: ^3.15.0
-    version: 3.15.0
+  .:
+    dependencies:
+      '@hono/zod-validator':
+        specifier: ^0.1.11
+        version: 0.1.11(hono@3.11.7)(zod@3.22.4)
+      hono:
+        specifier: ^3.11.7
+        version: 3.11.7
+      zod:
+        specifier: ^3.22.4
+        version: 3.22.4
+    devDependencies:
+      '@cloudflare/workers-types':
+        specifier: ^4.20230914.0
+        version: 4.20230914.0
+      '@hono/vite-cloudflare-pages':
+        specifier: ^0.1.0
+        version: 0.1.0(hono@3.11.7)
+      '@hono/vite-dev-server':
+        specifier: ^0.2.0
+        version: 0.2.0
+      vite:
+        specifier: ^4.5.0
+        version: 4.5.0
+      wrangler:
+        specifier: ^3.15.0
+        version: 3.15.0
+
+  packages/app:
+    dependencies:
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.2.0(react@18.2.0)
+    devDependencies:
+      '@types/react':
+        specifier: ^18.2.45
+        version: 18.2.45
+      '@types/react-dom':
+        specifier: ^18.2.18
+        version: 18.2.18
+      '@vitejs/plugin-react':
+        specifier: ^4.2.1
+        version: 4.2.1(vite@4.5.0)
 
 packages:
 
@@ -986,8 +992,8 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001570
-      electron-to-chromium: 1.4.614
+      caniuse-lite: 1.0.30001571
+      electron-to-chromium: 1.4.616
       node-releases: 2.0.14
       update-browserslist-db: 1.0.13(browserslist@4.22.2)
     dev: true
@@ -996,8 +1002,8 @@ packages:
     resolution: {integrity: sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ==}
     dev: true
 
-  /caniuse-lite@1.0.30001570:
-    resolution: {integrity: sha512-+3e0ASu4sw1SWaoCtvPeyXp+5PsjigkSt8OXZbF9StH5pQWbxEjLAZE3n8Aup5udop1uRiKA7a4utUk/uoSpUw==}
+  /caniuse-lite@1.0.30001571:
+    resolution: {integrity: sha512-tYq/6MoXhdezDLFZuCO/TKboTzuQ/xR5cFdgXPfDtM7/kchBO3b4VWghE/OAi/DV7tTdhmLjZiZBZi1fA/GheQ==}
     dev: true
 
   /capnp-ts@0.7.0:
@@ -1072,8 +1078,8 @@ packages:
       ms: 2.1.2
     dev: true
 
-  /electron-to-chromium@1.4.614:
-    resolution: {integrity: sha512-X4ze/9Sc3QWs6h92yerwqv7aB/uU8vCjZcrMjA8N9R1pjMFRe44dLsck5FzLilOYvcXuDn93B+bpGYyufc70gQ==}
+  /electron-to-chromium@1.4.616:
+    resolution: {integrity: sha512-1n7zWYh8eS0L9Uy+GskE0lkBUNK83cXTVJI0pU3mGprFsbfSdAc15VTFbo+A+Bq4pwstmL30AVcEU3Fo463lNg==}
     dev: true
 
   /esbuild@0.17.19:
@@ -1289,7 +1295,7 @@ packages:
       stoppable: 1.1.0
       undici: 5.28.2
       workerd: 1.20231025.0
-      ws: 8.15.1
+      ws: 8.16.0
       youch: 3.3.3
       zod: 3.22.4
     transitivePeerDependencies:
@@ -1312,7 +1318,7 @@ packages:
       stoppable: 1.1.0
       undici: 5.28.2
       workerd: 1.20231030.0
-      ws: 8.15.1
+      ws: 8.16.0
       youch: 3.3.3
       zod: 3.22.4
     transitivePeerDependencies:
@@ -1625,8 +1631,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /ws@8.15.1:
-    resolution: {integrity: sha512-W5OZiCjXEmk0yZ66ZN82beM5Sz7l7coYxpRkzS+p9PP+ToQry8szKh+61eNktr7EA9DOwvFGhfC605jDHbP6QQ==}
+  /ws@8.16.0:
+    resolution: {integrity: sha512-HS0c//TP7Ina87TfiPUz1rQzMhHrl/SG2guqRcTOIUYD2q8uhUdNHZYJUaQ8aTGPzCh+c6oawMKW35nFl1dxyQ==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
       bufferutil: ^4.0.1

@@ -28,10 +28,9 @@ const route = app.post(
   async (c) => {
     const location = c.req.valid("json");
     locations.push(location);
-    const address = `${location.prefecture}${location.city}${location.block}`;
+    const address = `${location.prefecture} ${location.city} ${location.block}`;
 
     const { SLACK_WEBHOOK_URL } = c.env;
-    console.log(SLACK_WEBHOOK_URL);
     const text = `${location.name}\n${address}\nhttps://maps.google.com/maps?q=${location.lat},${location.long}`;
     const response = await fetch(SLACK_WEBHOOK_URL, {
       method: "POST",
