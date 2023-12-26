@@ -2,9 +2,12 @@ import { zValidator } from "@hono/zod-validator";
 import { Hono } from "hono";
 import { handle } from "hono/cloudflare-pages";
 import { z } from "zod";
-import { env } from "hono/adapter";
 
-const app = new Hono().basePath("/api");
+type Bindings = {
+  SLACK_WEBHOOK_URL: string;
+};
+
+const app = new Hono<{ Bindings: Bindings }>().basePath("/api");
 
 const locationSchema = z.object({
   name: z.string(),
@@ -27,7 +30,8 @@ const route = app.post(
     locations.push(location);
     const address = `${location.prefecture}${location.city}${location.block}`;
 
-    const { SLACK_WEBHOOK_URL } = env<{ SLACK_WEBHOOK_URL: string }>(c);
+    const { SLACK_WEBHOOK_URL } = c.env;
+    console.log(SLACK_WEBHOOK_URL);
     const text = `${location.name}\n${address}\nhttps://maps.google.com/maps?q=${location.lat},${location.long}`;
     const response = await fetch(SLACK_WEBHOOK_URL, {
       method: "POST",
