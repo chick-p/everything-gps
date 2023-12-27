@@ -4,8 +4,8 @@
   "type": "module",
   "scripts": {
     "build": "vite build",
-    "dev": "wrangler pages dev -- vite",
-    "deploy": "$npm_execpath run build && wrangler pages deploy pages"
+    "dev": "wrangler pages dev --port 8787 -- vite",
+    "release": "$npm_execpath run build && wrangler pages deploy pages"
   },
   "dependencies": {
     "react": "^18.2.0",

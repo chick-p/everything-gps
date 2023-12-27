@@ -1,13 +1,24 @@
-import type { InferResponseType } from "hono/client";
-import { hc } from "hono/client";
+import { InferResponseType, hc } from "hono/client";
 import { useEffect, useState } from "react";
+
 import { AppType } from "../functions/api/[[route]]";
 
 const client = hc<AppType>("/");
+const $get = client.api.worker.$get;
 
 const App = () => {
   const appName = "everything-gps";
-  const host = window.location.host;
+
+  const [worker, setWorker] = useState<InferResponseType<typeof $get>>();
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const res = await $get();
+      const respData = await res.json();
+      setWorker(respData);
+    };
+    fetchData();
+  }, []);
 
   return (
     <section>
@@ -17,16 +28,17 @@ const App = () => {
         <li>
           Copy your Cloudflare Workers URL:
           <br />
-          <a href="https://${host}">https://{host}</a>
+          <a href={worker?.url}>{worker?.url}</a>
         </li>
         <li>
-          Download
+          Download&nbsp;
           <a href="https://www.icloud.com/shortcuts/607d5d4edde1496993eb0d839544aca2">
             iOS Shortcut
           </a>
-          and add it to your iPhone.
+          &nbsp; and add it to your iPhone.
         </li>
         <li>Set your Cloudflare Workers URL.</li>
+        <li>Set Client ID and Client Secret.</li>
       </ol>
       <h2>How to use</h2>
       <ol>
