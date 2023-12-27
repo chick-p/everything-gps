@@ -5,8 +5,10 @@
   "scripts": {
     "app": "pnpm -F \"app\"",
     "api": "pnpm -F \"api\"",
+    "lint": "run-p -l lint:*",
     "lint:prettier": "prettier --check .",
     "lint:eslint": "ESLINT_USE_FLAT_CONFIG=true eslint \"packages/**/*.{ts,tsx}\"",
+    "fix": "run-s fix:*",
     "fix:prettier": "prettier -w .",
     "fix:eslint": "pnpm run lint:eslint --fix"
   },
