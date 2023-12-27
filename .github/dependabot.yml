@@ -1,0 +1,28 @@
+version: 2
+
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    assignees:
+      - "chick-p"
+
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    assignees:
+      - "chick-p"
+    groups:
+      eslint:
+        patterns:
+          - "eslint"
+          - "prettier"
+          - "eslint-config-*"
+          - "eslint-plugin-*"
+          - "@typescript-eslint/*"
+      stylelint:
+        patterns:
+          - "stylelint"
+          - "stylelint-config-standard"
