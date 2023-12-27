@@ -22,8 +22,8 @@ importers:
         specifier: ^4.20231218.0
         version: 4.20231218.0
       '@hono/vite-cloudflare-pages':
-        specifier: ^0.1.0
-        version: 0.1.0(hono@3.11.7)
+        specifier: ^0.1.2
+        version: 0.1.2(hono@3.11.7)
       '@hono/vite-dev-server':
         specifier: ^0.3.2
         version: 0.3.2(hono@3.11.7)
@@ -827,11 +827,11 @@ packages:
     engines: {node: '>=18.14.1'}
     dev: true
 
-  /@hono/vite-cloudflare-pages@0.1.0(hono@3.11.7):
-    resolution: {integrity: sha512-TXKVqUC8gYZZ8taavsbZsSJCkoBAuBhZZ4U8rcjO5/7byZUfZ4fnjjPS/0f4iEKuNbT+SQv6bCiRCP4iLX0kEw==}
+  /@hono/vite-cloudflare-pages@0.1.2(hono@3.11.7):
+    resolution: {integrity: sha512-yWigoHty/SqvMQ/ZRD8/m4WrL0k8YP0Kw4YdDa0V8fnHuhJ2XKMKRDdai3J3+SeEbnBqueHKVXSHExj06aCiUA==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
-      hono: '*'
+      hono: '>=3.11.7'
     dependencies:
       hono: 3.11.7
     dev: true
