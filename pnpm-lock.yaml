@@ -25,8 +25,8 @@ importers:
         specifier: ^0.1.2
         version: 0.1.2(hono@3.11.11)
       '@hono/vite-dev-server':
-        specifier: ^0.3.2
-        version: 0.3.2(hono@3.11.11)
+        specifier: ^0.3.4
+        version: 0.3.4(hono@3.11.11)
       '@typescript-eslint/eslint-plugin':
         specifier: ^6.16.0
         version: 6.16.0(@typescript-eslint/parser@6.16.0)(eslint@8.56.0)(typescript@5.3.3)
@@ -836,8 +836,8 @@ packages:
       hono: 3.11.11
     dev: true
 
-  /@hono/vite-dev-server@0.3.2(hono@3.11.11):
-    resolution: {integrity: sha512-hEqgP1BtK9hHcp1XZJyk+LgBGG+tzO7nwCKUYwGwgy1KWlqVtu1tKSa1YzyF8StPqJGq4kLbgiSKK3ODU1LgNQ==}
+  /@hono/vite-dev-server@0.3.4(hono@3.11.11):
+    resolution: {integrity: sha512-zxBeiZ2xXlU1S3RiVNsdahKruks1pf9igTJK+81EExD14h9ucyc40l6xLdgVHiIHhEPyqvrcFUBBmn66+QnhxA==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
       hono: '>=3.11.7'
