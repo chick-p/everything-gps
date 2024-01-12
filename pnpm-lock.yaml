@@ -10,10 +10,10 @@ importers:
     dependencies:
       '@hono/zod-validator':
         specifier: ^0.1.11
-        version: 0.1.11(hono@3.12.1)(zod@3.22.4)
+        version: 0.1.11(hono@3.12.2)(zod@3.22.4)
       hono:
-        specifier: ^3.12.1
-        version: 3.12.1
+        specifier: ^3.12.2
+        version: 3.12.2
       zod:
         specifier: ^3.22.4
         version: 3.22.4
@@ -23,10 +23,10 @@ importers:
         version: 4.20231218.0
       '@hono/vite-cloudflare-pages':
         specifier: ^0.1.2
-        version: 0.1.2(hono@3.12.1)
+        version: 0.1.2(hono@3.12.2)
       '@hono/vite-dev-server':
         specifier: ^0.3.4
-        version: 0.3.4(hono@3.12.1)
+        version: 0.3.4(hono@3.12.2)
       '@typescript-eslint/eslint-plugin':
         specifier: ^6.18.1
         version: 6.18.1(@typescript-eslint/parser@6.18.1)(eslint@8.56.0)(typescript@5.3.3)
@@ -872,23 +872,23 @@ packages:
     engines: {node: '>=18.14.1'}
     dev: true
 
-  /@hono/vite-cloudflare-pages@0.1.2(hono@3.12.1):
+  /@hono/vite-cloudflare-pages@0.1.2(hono@3.12.2):
     resolution: {integrity: sha512-yWigoHty/SqvMQ/ZRD8/m4WrL0k8YP0Kw4YdDa0V8fnHuhJ2XKMKRDdai3J3+SeEbnBqueHKVXSHExj06aCiUA==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
       hono: '>=3.11.7'
     dependencies:
-      hono: 3.12.1
+      hono: 3.12.2
     dev: true
 
-  /@hono/vite-dev-server@0.3.4(hono@3.12.1):
+  /@hono/vite-dev-server@0.3.4(hono@3.12.2):
     resolution: {integrity: sha512-zxBeiZ2xXlU1S3RiVNsdahKruks1pf9igTJK+81EExD14h9ucyc40l6xLdgVHiIHhEPyqvrcFUBBmn66+QnhxA==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
       hono: '>=3.11.7'
     dependencies:
       '@hono/node-server': 1.3.3
-      hono: 3.12.1
+      hono: 3.12.2
       miniflare: 3.20231030.4
       minimatch: 9.0.3
     transitivePeerDependencies:
@@ -897,13 +897,13 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@hono/zod-validator@0.1.11(hono@3.12.1)(zod@3.22.4):
+  /@hono/zod-validator@0.1.11(hono@3.12.2)(zod@3.22.4):
     resolution: {integrity: sha512-PQXeHUP0+36qpRt8yfeD7N2jbK3ETlGvSN6dMof/HwUC/APRokQRjpXZm4rrlG71Ft0aWE01+Bm4XejqPie5Uw==}
     peerDependencies:
       hono: '>=3.9.0'
       zod: ^3.19.1
     dependencies:
-      hono: 3.12.1
+      hono: 3.12.2
       zod: 3.22.4
     dev: false
 
@@ -2025,8 +2025,8 @@ packages:
       function-bind: 1.1.2
     dev: true
 
-  /hono@3.12.1:
-    resolution: {integrity: sha512-wCvww2YZ04whKJVXHDwtnx0x5Jzj0xtVUkguyj1zRDQ4qW1yKWcUTNCOa/H/wMHrHtXJmymlpIZIGUm3MwXlHA==}
+  /hono@3.12.2:
+    resolution: {integrity: sha512-h8MlaLiWEeiqMtpQBBhWor4UTu/8bYWuv0yc7DaCRsG3Ny2rXdkXzrYrgc+FWXoyh06CL2QDB/HbjJ9XJLjEhw==}
     engines: {node: '>=16.0.0'}
 
   /hosted-git-info@2.8.9:
