@@ -18,7 +18,7 @@
     "zod": "^3.22.4"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20240117.0",
+    "@cloudflare/workers-types": "^4.20240129.0",
     "@hono/vite-cloudflare-pages": "^0.2.1",
     "@hono/vite-dev-server": "^0.3.5",
     "@typescript-eslint/eslint-plugin": "^6.19.1",
