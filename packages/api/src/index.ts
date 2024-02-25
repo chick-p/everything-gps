@@ -15,7 +15,7 @@ type Env = {
   SLACK_WEBHOOK_URL: string;
 };
 
-app.get("/", (c) => c.text("Hello everytnig-gps!"));
+app.get("/", (c) => c.text("Hello everything-gps!"));
 
 app.post("/api/location", zValidator("json", locationSchema), async (c) => {
   const location = c.req.valid("json");
