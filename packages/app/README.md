@@ -5,7 +5,7 @@
 Set environment variables in Cloudflare workers dashboard:
 
 ```shell
-WORKER_BASE_URL = "https://example.com"
+WORKER_BASE_URL=https://example.com
 ```
 
 Run:
