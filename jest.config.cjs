@@ -5,4 +5,7 @@ module.exports = {
     "^.+\\.(ts|tsx)$": "esbuild-jest",
   },
   testEnvironment: "miniflare",
+  moduleNameMapper: {
+    __STATIC_CONTENT_MANIFEST: "<rootDir>/packages/app/src/test/manifest.ts",
+  },
 };
