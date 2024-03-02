@@ -12,11 +12,11 @@ Run:
 
 ```shell
 pnpm install
-pnpm run dev
+pnpm app dev
 ```
 
 ## Deployment
 
 ```shell
-pnpm run release
+pnpm app release
 ```
