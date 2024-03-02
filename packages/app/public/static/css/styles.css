@@ -1,0 +1,203 @@
+:root {
+  --color-black: #003;
+  --color-white: #f9fafb;
+  --color-gray: #ccc;
+  --color-blue: #3b82f6;
+  --color-light-coral: #feebeb;
+  --color-coral: #fc8281;
+  --color-dark-coral: #c53130;
+  --color-light-teal: #daeeed;
+  --color-teal: #6dbeb7;
+  --color-dark-teal: #0d9488;
+}
+
+html {
+  font-size: 100%;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  font-family: Roboto, "Helvetica Neue", "Noto Sans JP",
+    "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+h1 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+
+ul,
+ol {
+  padding: 0 0 0 1.75rem;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+label {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+}
+
+a {
+  color: var(--color-blue);
+  text-decoration: underline;
+}
+
+.c-main {
+  padding: 2rem;
+}
+
+.c-main * + * {
+  margin: 1.5rem 0 0;
+}
+
+.c-main li {
+  margin: 0.5rem 0 0;
+}
+
+.c-message {
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.c-message--error {
+  border: 1px solid var(--color-coral);
+  background-color: var(--color-light-coral);
+  color: var(--color-dark-coral);
+}
+
+.c-title--label,
+.c-date-from--label,
+.c-date-to--label {
+  display: block;
+  margin: 0 0 0.5rem;
+}
+
+.spacer {
+  margin: 0.75rem 0 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.c-date-from,
+.c-date-to {
+  margin: 0.75rem 0 0;
+}
+
+.c-title--input {
+  display: block;
+  width: 100%;
+  padding: 0.625rem;
+  background-color: var(--color-white);
+  border: 2px solid var(--color-gray);
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.c-title--input:focus {
+  --tw-ring-color: var(--color-blue);
+
+  border-color: var(--color-blue);
+}
+
+.c-date--select {
+  display: block;
+  width: 100%;
+  padding: 0.625rem;
+  background-color: var(--color-white);
+  border: 2px solid var(--color-gray);
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.c-date--select:focus {
+  --tw-ring-color: var(--color-blue);
+
+  border-color: var(--color-blue);
+}
+
+.c-multiple-dates,
+.c-all-dates {
+  display: flex;
+  height: 1.5rem;
+  align-items: center;
+  column-gap: 0.75rem;
+}
+
+.c-multiple-dates--toggle,
+.c-all-dates--toggle {
+  display: inline-block;
+  position: relative;
+  width: 50px;
+  height: 25px;
+  border-radius: 25px;
+  border: 2px solid var(--color-gray);
+  box-sizing: content-box;
+  cursor: pointer;
+  transition: border-color 0.4s;
+}
+
+.c-multiple-dates--toggle:has(:checked),
+.c-all-dates--toggle:has(:checked) {
+  border-color: var(--color-teal);
+}
+
+.c-multiple-dates--toggle::after,
+.c-all-dates--toggle::after {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--color-gray);
+  content: "";
+  transition: left 0.4s;
+}
+
+.c-multiple-dates--toggle:has(:checked)::after,
+.c-all-dates--toggle:has(:checked)::after {
+  left: 25px;
+  background-color: var(--color-teal);
+}
+
+.c-multiple-dates--toggle input,
+.c-all-dates--toggle input {
+  display: none;
+}
+
+.c-multiple-dates--label,
+.c-all-dates--label {
+  margin: 0;
+  line-height: 1.5rem;
+}
+
+.c-button {
+  padding: 0.625rem 1.25rem;
+  margin: 0 0.75rem 0.25rem 0;
+  color: var(--color-white);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  background-color: var(--color-dark-teal);
+  border: 0;
+  border-radius: 0.5rem;
+}
+
+.c-button:hover {
+  background-color: var(--color-dark-teal);
+  filter: brightness(1.25);
+}
