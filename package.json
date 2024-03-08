@@ -14,7 +14,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@hono/zod-validator": "^0.1.11",
+    "@hono/zod-validator": "^0.2.0",
     "hono": "^4.0.8",
     "zod": "^3.22.4"
   },
