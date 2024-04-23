@@ -1,0 +1,12 @@
+{
+  "name": "everything-gps",
+  "description": "Everything to gps",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "chick-p",
+  "license": "MIT"
+}
