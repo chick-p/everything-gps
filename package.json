@@ -4,6 +4,12 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "lint": "run-p -l lint:*",
+    "lint:prettier": "prettier --check .",
+    "lint:eslint": "eslint \"apps/**/*.{ts,tsx}\"",
+    "fix": "run-s fix:*",
+    "fix:prettier": "prettier -w .",
+    "fix:eslint": "pnpm run lint:eslint --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
