@@ -1,4 +1,4 @@
-name = "webapp"
+name = "everything-gps"
 pages_build_output_dir = "./dist"
 
 # [vars]

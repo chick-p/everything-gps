@@ -1,8 +1,3 @@
-```txt
-npm install
-npm run dev
-```
+# everything-gps(webapp)
 
-```txt
-npm run deploy
 ```
