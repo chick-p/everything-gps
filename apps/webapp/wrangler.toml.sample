@@ -1,21 +1,8 @@
 name = "everything-gps"
 pages_build_output_dir = "./dist"
 
-# [vars]
-# MY_VAR = "my-variable"
-
-# [[kv_namespaces]]
-# binding = "MY_KV_NAMESPACE"
-# id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-
-# [[r2_buckets]]
-# binding = "MY_BUCKET"
-# bucket_name = "my-bucket"
-
-# [[d1_databases]]
-# binding = "DB"
-# database_name = "my-database"
-# database_id = ""
-
-# [ai]
-# binding = "AI"
+[[d1_databases]]
+binding = "DB"
+database_name = "everything-gps-database"
+database_id = ""
+migrations_dir = "drizzle/migrations"
