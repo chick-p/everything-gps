@@ -1,12 +1,14 @@
+import { zValidator } from "@hono/zod-validator";
 import { drizzle } from "drizzle-orm/d1";
 import { Hono } from "hono";
 
 import { locations } from "../schema";
 import { Bindings } from "../types";
+import { LocationScheme } from "../types/location";
 
 const app = new Hono<{ Bindings: Bindings }>();
 
-app.get("/locations", async (c) => {
+app.get("/locations", zValidator("form", LocationScheme), async (c) => {
   const db = drizzle(c.env.DB);
   try {
     const result = await db.select().from(locations).all();
