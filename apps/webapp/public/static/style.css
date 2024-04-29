@@ -5,7 +5,7 @@
   --color-blue: #3b82f6;
   --color-light-coral: #feebeb;
   --color-coral: #fc8281;
-  --color-dark-coral: #c53130;
+  --color-dark-coral: #be6d6d;
   --color-light-teal: #daeeed;
   --color-teal: #6dbeb7;
   --color-dark-teal: #0d9488;
@@ -50,6 +50,13 @@ table thead {
 table th,
 table td {
   text-align: left;
-  width: 25%;
   padding: 16px 8px;
+}
+
+button {
+  background-color: var(--color-coral);
+  border: none;
+  padding: 8px 8px;
+  border-radius: 4px;
+  cursor: pointer;
 }

@@ -14,4 +14,5 @@ export const LocationScheme = z.object({
   createdAt: z.date().optional(),
 });
 
+export type LocationId = z.infer<typeof LocationScheme>["id"];
 export type Location = Required<z.infer<typeof LocationScheme>>;

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "hono/jsx";
 import { render } from "hono/jsx/dom";
 
-import type { Location } from "./types/location";
+import type { Location, LocationId } from "./types/location";
 
 const appName = "everything-gps";
 
@@ -17,6 +17,20 @@ function App() {
     fetchData();
   }, []);
 
+  const handleDelete = async (id: LocationId) => {
+    const hasLocation = locations.find((location) => location.id === id);
+    if (!hasLocation) {
+      return;
+    }
+    const resp = await fetch(`/api/locations/${id}`, {
+      method: "DELETE",
+    });
+    if (resp.status === 204) {
+      const newLocations = locations.filter((location) => location.id !== id);
+      setLocations(newLocations);
+    }
+  };
+
   return (
     <>
       <main class="c-main">
@@ -27,6 +41,7 @@ function App() {
               <th>name</th>
               <th>created at</th>
               <th>map</th>
+              <th>{``}</th>
             </tr>
           </thead>
           <tbody>
@@ -44,6 +59,15 @@ function App() {
                         width="1.4em"
                       ></iconify-icon>
                     </a>
+                  </td>
+                  <td>
+                    <button onClick={() => handleDelete(location.id)}>
+                      <iconify-icon
+                        icon="mdi:trash-can-circle"
+                        style="color: white"
+                        width="1.2em"
+                      ></iconify-icon>
+                    </button>
                   </td>
                 </tr>
               );
