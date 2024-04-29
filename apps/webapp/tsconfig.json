@@ -1,9 +1,6 @@
 {
+  "extends": "../tsconfig-base.json",
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
-    "moduleResolution": "Bundler",
-    "strict": true,
     "lib": ["ESNext", "DOM"],
     "types": ["@cloudflare/workers-types", "vite/client"],
     "jsx": "react-jsx",
