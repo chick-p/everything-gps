@@ -1,9 +1,23 @@
-import { Hono } from 'hono'
+import { Hono } from "hono";
+import { serveStatic } from "hono/cloudflare-workers";
+import manifest from "__STATIC_CONTENT_MANIFEST";
 
-const app = new Hono()
+import { Home } from "./home";
+import api from "./api";
+import type { Bindings } from "./types";
 
-app.get('/', (c) => {
-  return c.text('Hello Hono!')
-})
+const app = new Hono<{ Bindings: Bindings }>();
 
-export default app
+app.get("/static/*", serveStatic({ root: "./", manifest }));
+app.route("/api", api);
+
+const appName = "everything-gps";
+
+app.get("/", async (c) => {
+  const host = c.req.raw.headers.get("host") || "";
+  const SHORTCUT_URL = c.env.SHORTCUT_URL;
+  const htmlContent = await Home({ appName, host, shortcutUrl: SHORTCUT_URL });
+  return c.html(htmlContent);
+});
+
+export default app;

@@ -1,0 +1,13 @@
+name = "everything-gps-shortcut"
+compatibility_date = "2024-04-05"
+
+[site]
+bucket = "./public"
+
+[vars]
+SHORTCUT_URL = "https://www.icloud.com/shortcuts/607d5d4edde1496993eb0d839544aca2"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "everything-gps-database"
+database_id = ""
