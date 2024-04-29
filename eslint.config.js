@@ -20,6 +20,6 @@ export default [
     },
     languageOptions: {
       parser: typeScriptESLintParser,
-    },
+    }
   },
 ];

@@ -1,4 +1,4 @@
-# everything-gps(webapp)
+# everything-gps(web)
 
 ## Development
 
