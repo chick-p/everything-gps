@@ -25,3 +25,17 @@ npx wrangler d1 execute everything-gps-database \
   --command="INSERT INTO Locations (name, lat, lng) VALUES ('Himeji Castle', '34.8394324', '134.693894'), ('Matsuyama Castle', '36.2386483', '137.9688873')" \
   --local
 ```
+
+## Deploy
+
+Create a new DB
+
+```shell
+npx wrangler d1 migrations apply everything-gps-database --remote
+```
+
+Deploy app to Cloudflare Pages:
+
+```shell
+pnpm run deploy
+```
