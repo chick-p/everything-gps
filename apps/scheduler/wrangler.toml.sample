@@ -9,3 +9,7 @@ migrations_dir = "drizzle/migrations"
 
 [vars]
 SLACK_WEBHOOK_URL = ""
+
+# every Saturday at 9am
+[triggers]
+crons = ["0 9 * * 6"]

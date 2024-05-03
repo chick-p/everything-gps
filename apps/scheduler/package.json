@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "dev": "wrangler dev src/index.ts",
+    "dev:schedule": "wrangler dev --test-scheduled src/index.ts",
     "deploy": "wrangler deploy --minify src/index.ts"
   }
 }
