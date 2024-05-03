@@ -15,8 +15,8 @@ importers:
         specifier: ^0.20.17
         version: 0.20.17
       drizzle-orm:
-        specifier: ^0.30.9
-        version: 0.30.9(@cloudflare/workers-types@4.20240423.0)
+        specifier: ^0.30.10
+        version: 0.30.10(@cloudflare/workers-types@4.20240423.0)
       hono:
         specifier: ^4.2.7
         version: 4.2.7
@@ -61,7 +61,11 @@ importers:
         specifier: ^3.47.0
         version: 3.51.2(@cloudflare/workers-types@4.20240423.0)
 
-  apps/webapp: {}
+  apps/scheduler: {}
+
+  apps/shortcut: {}
+
+  apps/web: {}
 
 packages:
 
@@ -1895,8 +1899,8 @@ packages:
       - supports-color
     dev: false
 
-  /drizzle-orm@0.30.9(@cloudflare/workers-types@4.20240423.0):
-    resolution: {integrity: sha512-VOiCFsexErmgqvNCOmbzmqDCZzZsHoz6SkWAjTFxsTr1AllKDbDJ2+GgedLXsXMDgpg/ljDG1zItIFeZtiO2LA==}
+  /drizzle-orm@0.30.10(@cloudflare/workers-types@4.20240423.0):
+    resolution: {integrity: sha512-IRy/QmMWw9lAQHpwbUh1b8fcn27S/a9zMIzqea1WNOxK9/4EB8gIo+FZWLiPXzl2n9ixGSv8BhsLZiOppWEwBw==}
     peerDependencies:
       '@aws-sdk/client-rds-data': '>=3'
       '@cloudflare/workers-types': '>=3'
