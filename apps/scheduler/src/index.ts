@@ -1,9 +1,16 @@
-import { Hono } from 'hono'
+import { Hono } from "hono";
 
-const app = new Hono()
 
-app.get('/', (c) => {
-  return c.text('Hello Hono!')
-})
+const app = new Hono();
 
 export default app
+const appName = "everything-gps";
+
+app.get("/", async (c) => {
+  return c.json(
+    {
+      message: `Hello, ${appName}!`,
+    },
+    200,
+  );
+});
