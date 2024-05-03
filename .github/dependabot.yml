@@ -1,0 +1,33 @@
+version: 2
+
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "friday"
+    assignees:
+      - "chick-p"
+
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "friday"
+    assignees:
+      - "chick-p"
+    groups:
+      eslint:
+        patterns:
+          - "eslint"
+          - "prettier"
+          - "eslint-config-*"
+          - "eslint-plugin-*"
+          - "@typescript-eslint/*"
+      hono:
+        patterns:
+          - "hono"
+          - "@hono/*"
+      drizzle:
+        patterns:
+          - "drizzle-*"
