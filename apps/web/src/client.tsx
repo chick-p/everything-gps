@@ -8,10 +8,15 @@ const appName = "everything-gps";
 function App() {
   const [locations, setLocations] = useState<Location[]>([]);
 
+  const fetchAllLocations = async (): Promise<Array<Location>> => {
+    const res = await fetch("/api/locations");
+    const data = await res.json<Array<Location>>();
+    return data;
+  };
+
   useEffect(() => {
     const fetchData = async () => {
-      const res = await fetch("/api/locations");
-      const data = await res.json<Array<Location>>();
+      const data = await fetchAllLocations();
       setLocations(data);
     };
     fetchData();
@@ -22,13 +27,11 @@ function App() {
     if (!hasLocation) {
       return;
     }
-    const resp = await fetch(`/api/locations/${id}`, {
+    await fetch(`/api/locations/${id}`, {
       method: "DELETE",
     });
-    if (resp.status === 204) {
-      const newLocations = locations.filter((location) => location.id !== id);
-      setLocations(newLocations);
-    }
+    const data = await fetchAllLocations();
+    setLocations(data);
   };
 
   return (
