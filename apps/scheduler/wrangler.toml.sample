@@ -9,6 +9,7 @@ migrations_dir = "drizzle/migrations"
 
 [vars]
 SLACK_WEBHOOK_URL = ""
+EVERYTHING_GPS_WEB_URL = "https://example.pages.dev/"
 
 # every Saturday at 9am
 [triggers]

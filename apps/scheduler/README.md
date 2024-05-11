@@ -14,6 +14,7 @@
 
    - `database-id` - The ID of the database.
    - `SLACK_WEBHOOK_URL` - The URL of the Slack webhook.
+   - `EVERYTHING_GPS_WEB_URL` - The URL of the everything-gps web app.
    - cron job
 
 1. Setup DB:

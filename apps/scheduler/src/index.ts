@@ -27,7 +27,7 @@ const scheduled = async (_batch: number, env: Bindings) => {
   if (size !== 0) {
     await sendSlackMessage({
       url: env.SLACK_WEBHOOK_URL,
-      text: `There are ${size} locations in everything-gps.`,
+      text: `There are ${size} locations in everything-gps.\n${env.EVERYTHING_GPS_WEB_URL},`,
     });
   }
 };
