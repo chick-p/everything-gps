@@ -16,7 +16,7 @@ importers:
         version: 0.20.17
       drizzle-orm:
         specifier: ^0.30.10
-        version: 0.30.10(@cloudflare/workers-types@4.20240529.0)
+        version: 0.30.10(@cloudflare/workers-types@4.20240605.0)
       hono:
         specifier: ^4.3.0
         version: 4.3.0
@@ -25,8 +25,8 @@ importers:
         version: 3.23.8
     devDependencies:
       '@cloudflare/workers-types':
-        specifier: ^4.20240529.0
-        version: 4.20240529.0
+        specifier: ^4.20240605.0
+        version: 4.20240605.0
       '@hono/vite-cloudflare-pages':
         specifier: ^0.2.4
         version: 0.2.5(hono@4.3.0)
@@ -59,7 +59,7 @@ importers:
         version: 1.6.0
       wrangler:
         specifier: ^3.59.0
-        version: 3.59.0(@cloudflare/workers-types@4.20240529.0)
+        version: 3.59.0(@cloudflare/workers-types@4.20240605.0)
 
   apps/scheduler: {}
 
@@ -166,8 +166,8 @@ packages:
     dev: true
     optional: true
 
-  /@cloudflare/workers-types@4.20240529.0:
-    resolution: {integrity: sha512-W5obfjAwCNdYk3feUHtDfUxtTU6WIq83k6gmrLLJv+HkgCkOTwwrDNs+3w1Qln0tMj+FQx/fbwxw3ZuHIoyzGg==}
+  /@cloudflare/workers-types@4.20240605.0:
+    resolution: {integrity: sha512-zJw4Q6CnkaQ5JZmHRkNiSs5GfiRgUIUL8BIHPQkd2XUHZkIBv9M9yc0LKEwMYGpCFC+oSOltet6c9RjP9uQ99g==}
 
   /@cspotcode/source-map-support@0.8.1:
     resolution: {integrity: sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==}
@@ -1941,7 +1941,7 @@ packages:
       - supports-color
     dev: false
 
-  /drizzle-orm@0.30.10(@cloudflare/workers-types@4.20240529.0):
+  /drizzle-orm@0.30.10(@cloudflare/workers-types@4.20240605.0):
     resolution: {integrity: sha512-IRy/QmMWw9lAQHpwbUh1b8fcn27S/a9zMIzqea1WNOxK9/4EB8gIo+FZWLiPXzl2n9ixGSv8BhsLZiOppWEwBw==}
     peerDependencies:
       '@aws-sdk/client-rds-data': '>=3'
@@ -2021,7 +2021,7 @@ packages:
       sqlite3:
         optional: true
     dependencies:
-      '@cloudflare/workers-types': 4.20240529.0
+      '@cloudflare/workers-types': 4.20240605.0
     dev: false
 
   /env-paths@3.0.0:
@@ -4170,7 +4170,7 @@ packages:
       '@cloudflare/workerd-windows-64': 1.20240524.0
     dev: true
 
-  /wrangler@3.59.0(@cloudflare/workers-types@4.20240529.0):
+  /wrangler@3.59.0(@cloudflare/workers-types@4.20240605.0):
     resolution: {integrity: sha512-MLKejazUJrekbD8EnQfN6d7fei+IGnq2aVXeILFDy0aTktVNXKvO+eC+mND1zOr+k0KvQN4sJo8vGwqYoY7btw==}
     engines: {node: '>=16.17.0'}
     hasBin: true
@@ -4181,7 +4181,7 @@ packages:
         optional: true
     dependencies:
       '@cloudflare/kv-asset-handler': 0.3.2
-      '@cloudflare/workers-types': 4.20240529.0
+      '@cloudflare/workers-types': 4.20240605.0
       '@esbuild-plugins/node-globals-polyfill': 0.2.3(esbuild@0.17.19)
       '@esbuild-plugins/node-modules-polyfill': 0.2.2(esbuild@0.17.19)
       blake3-wasm: 2.1.5
