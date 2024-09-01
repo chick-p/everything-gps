@@ -33,12 +33,6 @@ importers:
       '@hono/vite-dev-server':
         specifier: ^0.12.0
         version: 0.12.2(hono@4.5.10)
-      '@typescript-eslint/eslint-plugin':
-        specifier: ^8.3.0
-        version: 8.3.0(@typescript-eslint/parser@8.3.0)(eslint@9.9.1)(typescript@5.5.4)
-      '@typescript-eslint/parser':
-        specifier: ^8.3.0
-        version: 8.3.0(eslint@9.9.1)(typescript@5.5.4)
       eslint:
         specifier: ^9.9.1
         version: 9.9.1
@@ -51,6 +45,9 @@ importers:
       prettier:
         specifier: ^3.3.3
         version: 3.3.3
+      typescript-eslint:
+        specifier: ^8.3.0
+        version: 8.3.0(eslint@9.9.1)(typescript@5.5.4)
       vite:
         specifier: ^5.4.2
         version: 5.4.2
@@ -3590,6 +3587,24 @@ packages:
       has-proto: 1.0.3
       is-typed-array: 1.1.13
       possible-typed-array-names: 1.0.0
+    dev: true
+
+  /typescript-eslint@8.3.0(eslint@9.9.1)(typescript@5.5.4):
+    resolution: {integrity: sha512-EvWjwWLwwKDIJuBjk2I6UkV8KEQcwZ0VM10nR1rIunRDIP67QJTZAHBXTX0HW/oI1H10YESF8yWie8fRQxjvFA==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    peerDependencies:
+      typescript: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+    dependencies:
+      '@typescript-eslint/eslint-plugin': 8.3.0(@typescript-eslint/parser@8.3.0)(eslint@9.9.1)(typescript@5.5.4)
+      '@typescript-eslint/parser': 8.3.0(eslint@9.9.1)(typescript@5.5.4)
+      '@typescript-eslint/utils': 8.3.0(eslint@9.9.1)(typescript@5.5.4)
+      typescript: 5.5.4
+    transitivePeerDependencies:
+      - eslint
+      - supports-color
     dev: true
 
   /typescript@5.5.4:
