@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@hono/zod-validator':
-        specifier: ^0.4.1
-        version: 0.4.1(hono@4.6.13)(zod@3.23.8)
+        specifier: ^0.4.2
+        version: 0.4.2(hono@4.6.13)(zod@3.23.8)
       drizzle-kit:
         specifier: ^0.29.1
         version: 0.29.1
@@ -879,8 +879,8 @@ packages:
       wrangler:
         optional: true
 
-  '@hono/zod-validator@0.4.1':
-    resolution: {integrity: sha512-I8LyfeJfvVmC5hPjZ2Iij7RjexlgSBT7QJudZ4JvNPLxn0JQ3sqclz2zydlwISAnw21D2n4LQ0nfZdoiv9fQQA==}
+  '@hono/zod-validator@0.4.2':
+    resolution: {integrity: sha512-1rrlBg+EpDPhzOV4hT9pxr5+xDVmKuz6YJl+la7VCwK6ass5ldyKm5fD+umJdV2zhHD6jROoCCv8NbTwyfhT0g==}
     peerDependencies:
       hono: '>=3.9.0'
       zod: ^3.19.1
@@ -2950,7 +2950,7 @@ snapshots:
       miniflare: 3.20241205.0
       wrangler: 3.93.0(@cloudflare/workers-types@4.20241205.0)
 
-  '@hono/zod-validator@0.4.1(hono@4.6.13)(zod@3.23.8)':
+  '@hono/zod-validator@0.4.2(hono@4.6.13)(zod@3.23.8)':
     dependencies:
       hono: 4.6.13
       zod: 3.23.8
