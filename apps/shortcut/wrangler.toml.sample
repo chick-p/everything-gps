@@ -10,4 +10,4 @@ SHORTCUT_URL = "https://www.icloud.com/shortcuts/607d5d4edde1496993eb0d839544aca
 [[d1_databases]]
 binding = "DB"
 database_name = "everything-gps-database"
-database_id = ""
+database_id = "<YOUR_DB_ID>"
