@@ -24,10 +24,10 @@
     "@hono/vite-cloudflare-pages": "^0.4.2",
     "@hono/vite-dev-server": "^0.19.0",
     "eslint": "^9.21.0",
-    "eslint-config-prettier": "^10.0.2",
+    "eslint-config-prettier": "^10.1.1",
     "npm-run-all": "^4.1.5",
-    "prettier": "^3.5.2",
-    "typescript-eslint": "^8.25.0",
+    "prettier": "^3.5.3",
+    "typescript-eslint": "^8.26.0",
     "vite": "^6.1.1",
     "vitest": "^3.0.7",
     "wrangler": "^3.109.1"
