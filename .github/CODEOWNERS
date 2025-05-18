@@ -3,4 +3,4 @@
 # disable for dependabot automerge
 /.github/workflows/
 /package.json
-/package-lock.json
+/pnpm-lock.yaml
