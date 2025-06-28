@@ -11,7 +11,6 @@
 1. Rename `wrangler.toml`.example to `wrangler.toml`.
 
 1. Set up the environment variables in `wrangler.toml`.
-
    - `database-id` - The ID of the database.
    - `SLACK_WEBHOOK_URL` - The URL of the Slack webhook.
    - `EVERYTHING_GPS_WEB_URL` - The URL of the everything-gps web app.
