@@ -16,7 +16,7 @@
     "@hono/zod-validator": "^0.7.2",
     "drizzle-kit": "^0.31.4",
     "drizzle-orm": "^0.44.3",
-    "hono": "^4.8.7",
+    "hono": "^4.8.10",
     "zod": "^3.25.76"
   },
   "devDependencies": {
