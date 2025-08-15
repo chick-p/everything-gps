@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@hono/zod-validator':
         specifier: ^0.7.2
-        version: 0.7.2(hono@4.9.0)(zod@4.0.15)
+        version: 0.7.2(hono@4.9.2)(zod@4.0.15)
       drizzle-kit:
         specifier: ^0.31.4
         version: 0.31.4
@@ -18,8 +18,8 @@ importers:
         specifier: ^0.44.4
         version: 0.44.4(@cloudflare/workers-types@4.20250807.0)(@libsql/client-wasm@0.14.0)(gel@2.0.1)
       hono:
-        specifier: ^4.9.0
-        version: 4.9.0
+        specifier: ^4.9.2
+        version: 4.9.2
       zod:
         specifier: ^4.0.15
         version: 4.0.15
@@ -29,10 +29,10 @@ importers:
         version: 4.20250807.0
       '@hono/vite-cloudflare-pages':
         specifier: ^0.4.2
-        version: 0.4.2(hono@4.9.0)
+        version: 0.4.2(hono@4.9.2)
       '@hono/vite-dev-server':
         specifier: ^0.20.1
-        version: 0.20.1(hono@4.9.0)(miniflare@4.20250730.0)(wrangler@4.27.0(@cloudflare/workers-types@4.20250807.0))
+        version: 0.20.1(hono@4.9.2)(miniflare@4.20250730.0)(wrangler@4.27.0(@cloudflare/workers-types@4.20250807.0))
       eslint:
         specifier: ^9.32.0
         version: 9.32.0
@@ -1701,8 +1701,8 @@ packages:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
 
-  hono@4.9.0:
-    resolution: {integrity: sha512-JAUc4Sqi3lhby2imRL/67LMcJFKiCu7ZKghM7iwvltVZzxEC5bVJCsAa4NTnSfmWGb+N2eOVtFE586R+K3fejA==}
+  hono@4.9.2:
+    resolution: {integrity: sha512-UG2jXGS/gkLH42l/1uROnwXpkjvvxkl3kpopL3LBo27NuaDPI6xHNfuUSilIHcrBkPfl4y0z6y2ByI455TjNRw==}
     engines: {node: '>=16.9.0'}
 
   hosted-git-info@2.8.9:
@@ -1814,8 +1814,8 @@ packages:
     resolution: {integrity: sha512-LpB/54B+/2J5hqQ7imZHfdU31OlgQqx7ZicVlkm9kzg9/w8GKLEcFfJl/t7DCEDueOyBAD6zCCwTO6Fzs0NoEQ==}
     engines: {node: '>=16'}
 
-  js-base64@3.7.7:
-    resolution: {integrity: sha512-7rCnleh0z2CkXhH67J8K1Ytz0b2Y+yxTPL+/KOJoa20hfnVQ/3/T6W/KflYI4bRHRagNeXeU2bkNGI3v1oS/lw==}
+  js-base64@3.7.8:
+    resolution: {integrity: sha512-hNngCeKxIUQiEUN3GPJOkz4wF/YvdUdbNL9hsBcMQTkKzboD7T/q3OYOuuPZLUE6dBxSGpwhk5mwuDud7JVAow==}
 
   js-tokens@9.0.1:
     resolution: {integrity: sha512-mxa9E9ITFOt0ban3j6L5MpjwegGz6lBQmM1IJkWeBZGcMxto50+eWdjC/52xDbS2vy0k7vIMK0Fe2wfL9OQSpQ==}
@@ -2815,26 +2815,26 @@ snapshots:
       '@eslint/core': 0.15.1
       levn: 0.4.1
 
-  '@hono/node-server@1.18.1(hono@4.9.0)':
+  '@hono/node-server@1.18.1(hono@4.9.2)':
     dependencies:
-      hono: 4.9.0
+      hono: 4.9.2
 
-  '@hono/vite-cloudflare-pages@0.4.2(hono@4.9.0)':
+  '@hono/vite-cloudflare-pages@0.4.2(hono@4.9.2)':
     dependencies:
-      hono: 4.9.0
+      hono: 4.9.2
 
-  '@hono/vite-dev-server@0.20.1(hono@4.9.0)(miniflare@4.20250730.0)(wrangler@4.27.0(@cloudflare/workers-types@4.20250807.0))':
+  '@hono/vite-dev-server@0.20.1(hono@4.9.2)(miniflare@4.20250730.0)(wrangler@4.27.0(@cloudflare/workers-types@4.20250807.0))':
     dependencies:
-      '@hono/node-server': 1.18.1(hono@4.9.0)
-      hono: 4.9.0
+      '@hono/node-server': 1.18.1(hono@4.9.2)
+      hono: 4.9.2
       minimatch: 9.0.5
     optionalDependencies:
       miniflare: 4.20250730.0
       wrangler: 4.27.0(@cloudflare/workers-types@4.20250807.0)
 
-  '@hono/zod-validator@0.7.2(hono@4.9.0)(zod@4.0.15)':
+  '@hono/zod-validator@0.7.2(hono@4.9.2)(zod@4.0.15)':
     dependencies:
-      hono: 4.9.0
+      hono: 4.9.2
       zod: 4.0.15
 
   '@humanfs/core@0.19.1': {}
@@ -2939,12 +2939,12 @@ snapshots:
   '@libsql/client-wasm@0.14.0':
     dependencies:
       '@libsql/core': 0.14.0
-      js-base64: 3.7.7
+      js-base64: 3.7.8
     optional: true
 
   '@libsql/core@0.14.0':
     dependencies:
-      js-base64: 3.7.7
+      js-base64: 3.7.8
     optional: true
 
   '@nodelib/fs.scandir@2.1.5':
@@ -3802,7 +3802,7 @@ snapshots:
     dependencies:
       function-bind: 1.1.2
 
-  hono@4.9.0: {}
+  hono@4.9.2: {}
 
   hosted-git-info@2.8.9: {}
 
@@ -3901,7 +3901,7 @@ snapshots:
   isexe@3.1.1:
     optional: true
 
-  js-base64@3.7.7:
+  js-base64@3.7.8:
     optional: true
 
   js-tokens@9.0.1: {}
