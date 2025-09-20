@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@hono/zod-validator':
         specifier: ^0.7.2
-        version: 0.7.2(hono@4.9.7)(zod@4.1.8)
+        version: 0.7.2(hono@4.9.7)(zod@4.1.9)
       drizzle-kit:
         specifier: ^0.31.4
         version: 0.31.4
@@ -21,8 +21,8 @@ importers:
         specifier: ^4.9.7
         version: 4.9.7
       zod:
-        specifier: ^4.1.8
-        version: 4.1.8
+        specifier: ^4.1.9
+        version: 4.1.9
     devDependencies:
       '@cloudflare/workers-types':
         specifier: ^4.20250912.0
@@ -2439,8 +2439,8 @@ packages:
   zod@3.22.3:
     resolution: {integrity: sha512-EjIevzuJRiRPbVH4mGc8nApb/lVLKVpmUhAaR5R5doKGfAnGJ6Gr3CViAVjP+4FWSxCsybeWQdcgCtbX+7oZug==}
 
-  zod@4.1.8:
-    resolution: {integrity: sha512-5R1P+WwQqmmMIEACyzSvo4JXHY5WiAFHRMg+zBZKgKS+Q1viRa0C1hmUKtHltoIFKtIdki3pRxkmpP74jnNYHQ==}
+  zod@4.1.9:
+    resolution: {integrity: sha512-HI32jTq0AUAC125z30E8bQNz0RQ+9Uc+4J7V97gLYjZVKRjeydPgGt6dvQzFrav7MYOUGFqqOGiHpA/fdbd0cQ==}
 
 snapshots:
 
@@ -2847,10 +2847,10 @@ snapshots:
       miniflare: 4.20250906.1
       wrangler: 4.36.0(@cloudflare/workers-types@4.20250912.0)
 
-  '@hono/zod-validator@0.7.2(hono@4.9.7)(zod@4.1.8)':
+  '@hono/zod-validator@0.7.2(hono@4.9.7)(zod@4.1.9)':
     dependencies:
       hono: 4.9.7
-      zod: 4.1.8
+      zod: 4.1.9
 
   '@humanfs/core@0.19.1': {}
 
@@ -4596,4 +4596,4 @@ snapshots:
 
   zod@3.22.3: {}
 
-  zod@4.1.8: {}
+  zod@4.1.9: {}
