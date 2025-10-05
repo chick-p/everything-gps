@@ -20,7 +20,7 @@
     "zod": "^4.1.9"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20250926.0",
+    "@cloudflare/workers-types": "^4.20251003.0",
     "@hono/vite-cloudflare-pages": "^0.4.2",
     "@hono/vite-dev-server": "^0.21.1",
     "eslint": "^9.36.0",
