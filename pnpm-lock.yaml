@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@hono/zod-validator':
         specifier: ^0.7.3
-        version: 0.7.3(hono@4.9.9)(zod@4.1.9)
+        version: 0.7.3(hono@4.9.9)(zod@4.1.12)
       drizzle-kit:
         specifier: ^0.31.5
         version: 0.31.5
@@ -21,8 +21,8 @@ importers:
         specifier: ^4.9.9
         version: 4.9.9
       zod:
-        specifier: ^4.1.9
-        version: 4.1.9
+        specifier: ^4.1.12
+        version: 4.1.12
     devDependencies:
       '@cloudflare/workers-types':
         specifier: ^4.20251008.0
@@ -1941,6 +1941,11 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
+  semver@7.7.3:
+    resolution: {integrity: sha512-SdsKMrI9TdgjdweUSR9MweHA4EJ8YxHn8DFaDisvhVlUOe4BF1tLD7GAj0lIqWVl+dPb/rExr0Btby5loQm20Q==}
+    engines: {node: '>=10'}
+    hasBin: true
+
   set-function-length@1.2.2:
     resolution: {integrity: sha512-pgRc4hJ4/sNjWCSS9AmnS40x3bNMDTknHgL5UaMBTMyJnU90EgWh1Rz+MC9eFu4BuN/UwZjKQuY/1v3rM7HMfg==}
     engines: {node: '>= 0.4'}
@@ -2294,8 +2299,8 @@ packages:
   zod@3.22.3:
     resolution: {integrity: sha512-EjIevzuJRiRPbVH4mGc8nApb/lVLKVpmUhAaR5R5doKGfAnGJ6Gr3CViAVjP+4FWSxCsybeWQdcgCtbX+7oZug==}
 
-  zod@4.1.9:
-    resolution: {integrity: sha512-HI32jTq0AUAC125z30E8bQNz0RQ+9Uc+4J7V97gLYjZVKRjeydPgGt6dvQzFrav7MYOUGFqqOGiHpA/fdbd0cQ==}
+  zod@4.1.12:
+    resolution: {integrity: sha512-JInaHOamG8pt5+Ey8kGmdcAcg3OL9reK8ltczgHTAwNhMys/6ThXHityHxVV2p3fkw/c+MAvBHFVYHFZDmjMCQ==}
 
 snapshots:
 
@@ -2629,10 +2634,10 @@ snapshots:
       miniflare: 4.20250906.1
       wrangler: 4.36.0(@cloudflare/workers-types@4.20251008.0)
 
-  '@hono/zod-validator@0.7.3(hono@4.9.9)(zod@4.1.9)':
+  '@hono/zod-validator@0.7.3(hono@4.9.9)(zod@4.1.12)':
     dependencies:
       hono: 4.9.9
-      zod: 4.1.9
+      zod: 4.1.12
 
   '@humanfs/core@0.19.1': {}
 
@@ -3951,6 +3956,9 @@ snapshots:
   semver@7.7.3:
     optional: true
 
+  semver@7.7.3:
+    optional: true
+
   set-function-length@1.2.2:
     dependencies:
       define-data-property: 1.1.4
@@ -4357,4 +4365,4 @@ snapshots:
 
   zod@3.22.3: {}
 
-  zod@4.1.9: {}
+  zod@4.1.12: {}
