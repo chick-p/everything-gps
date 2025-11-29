@@ -16,7 +16,7 @@ const content = (props: {
       </li>
       <li>
         Download
-        <a href="${props.shortcutUrl}">iOS Shortcut</a>
+        <a href=${props.shortcutUrl}>iOS Shortcut</a>
         and add it to your iPhone.
       </li>
       <li>Set your Cloudflare Workers URL.</li>
