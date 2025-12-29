@@ -12,11 +12,11 @@ importers:
         specifier: ^0.7.6
         version: 0.7.6(hono@4.11.1)(zod@4.2.1)
       drizzle-kit:
-        specifier: ^0.31.7
-        version: 0.31.7
+        specifier: ^0.31.8
+        version: 0.31.8
       drizzle-orm:
-        specifier: ^0.44.6
-        version: 0.44.7(@cloudflare/workers-types@4.20251219.0)(@libsql/client-wasm@0.14.0)(gel@2.0.1)
+        specifier: ^0.45.1
+        version: 0.45.1(@cloudflare/workers-types@4.20251219.0)(@libsql/client-wasm@0.14.0)(gel@2.0.1)
       hono:
         specifier: ^4.11.1
         version: 4.11.1
@@ -1325,12 +1325,12 @@ packages:
     resolution: {integrity: sha512-Btj2BOOO83o3WyH59e8MgXsxEQVcarkUOpEYrubB0urwnN10yQ364rsiByU11nZlqWYZm05i/of7io4mzihBtQ==}
     engines: {node: '>=8'}
 
-  drizzle-kit@0.31.7:
-    resolution: {integrity: sha512-hOzRGSdyKIU4FcTSFYGKdXEjFsncVwHZ43gY3WU5Bz9j5Iadp6Rh6hxLSQ1IWXpKLBKt/d5y1cpSPcV+FcoQ1A==}
+  drizzle-kit@0.31.8:
+    resolution: {integrity: sha512-O9EC/miwdnRDY10qRxM8P3Pg8hXe3LyU4ZipReKOgTwn4OqANmftj8XJz1UPUAS6NMHf0E2htjsbQujUTkncCg==}
     hasBin: true
 
-  drizzle-orm@0.44.7:
-    resolution: {integrity: sha512-quIpnYznjU9lHshEOAYLoZ9s3jweleHlZIAWR/jX9gAWNg/JhQ1wj0KGRf7/Zm+obRrYd9GjPVJg790QY9N5AQ==}
+  drizzle-orm@0.45.1:
+    resolution: {integrity: sha512-Te0FOdKIistGNPMq2jscdqngBRfBpC8uMFVwqjf6gtTVJHIQ/dosgV/CLBU2N4ZJBsXL5savCba9b0YJskKdcA==}
     peerDependencies:
       '@aws-sdk/client-rds-data': '>=3'
       '@cloudflare/workers-types': '>=4'
@@ -3255,7 +3255,7 @@ snapshots:
 
   detect-libc@2.1.2: {}
 
-  drizzle-kit@0.31.7:
+  drizzle-kit@0.31.8:
     dependencies:
       '@drizzle-team/brocli': 0.10.2
       '@esbuild-kit/esm-loader': 2.6.5
@@ -3264,7 +3264,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  drizzle-orm@0.44.7(@cloudflare/workers-types@4.20251219.0)(@libsql/client-wasm@0.14.0)(gel@2.0.1):
+  drizzle-orm@0.45.1(@cloudflare/workers-types@4.20251219.0)(@libsql/client-wasm@0.14.0)(gel@2.0.1):
     optionalDependencies:
       '@cloudflare/workers-types': 4.20251219.0
       '@libsql/client-wasm': 0.14.0
