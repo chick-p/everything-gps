@@ -15,7 +15,7 @@ Setup D1:
 npx wrangler d1 create everyting-gps-database
 
 # Create migration files
-npx drizzle-kit generate:sqlite
+npx drizzle-kit generate
 
 # Run migration
 npx wrangler d1 migrations apply everything-gps-database --local
