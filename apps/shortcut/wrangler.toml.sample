@@ -6,7 +6,7 @@ main = "src/index.ts"
 bucket = "./public"
 
 [vars]
-SHORTCUT_URL = "https://www.icloud.com/shortcuts/607d5d4edde1496993eb0d839544aca2"
+SHORTCUT_URL = "https://www.icloud.com/shortcuts/88e824c09aec4e0499c7c2552f70bfc0"
 
 [[d1_databases]]
 binding = "DB"
