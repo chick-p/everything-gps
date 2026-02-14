@@ -30,6 +30,7 @@ jobs:
         run: |
           echo "::add-mask::${{ secrets.CF_DB_ID }}"
           echo "::add-mask::${{ secrets.CF_WEB_URL }}"
+          echo "::add-mask::${{ secrets.CF_SUBDOMAIN }}"
           echo "::add-mask::${{ secrets.SLACK_WEBHOOK_URL }}"
 
       - name: Edit wrangler.toml (scheduler)
@@ -66,9 +67,14 @@ jobs:
           mv ./wrangler.toml.sample ./wrangler.toml
           sed -i 's|<YOUR_DB_ID>|${{ secrets.CF_DB_ID }}|' ./wrangler.toml
 
+      - name: Build (web)
+        working-directory: apps/web
+        run: pnpm build
+
       - name: Deploy (web)
         uses: cloudflare/wrangler-action@v3
         with:
           workingDirectory: apps/web
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
           apiToken: ${{ secrets.CF_API_TOKEN }}
+          command: pages deploy dist
