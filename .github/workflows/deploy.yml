@@ -30,6 +30,7 @@ jobs:
         run: |
           echo "::add-mask::${{ secrets.CF_DB_ID }}"
           echo "::add-mask::${{ secrets.CF_WEB_URL }}"
+          echo "::add-mask::${{ secrets.CF_SUBDOMAIN }}"
           echo "::add-mask::${{ secrets.SLACK_WEBHOOK_URL }}"
 
       - name: Edit wrangler.toml (scheduler)
