@@ -1,0 +1,74 @@
+name: deploy
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Install dependencies
+        run: pnpm install --shamefully-hoist
+        env:
+          CI: true
+
+      - name: Mask secrets
+        run: |
+          echo "::add-mask::${{ secrets.CF_DB_ID }}"
+          echo "::add-mask::${{ secrets.CF_WEB_URL }}"
+          echo "::add-mask::${{ secrets.SLACK_WEBHOOK_URL }}"
+
+      - name: Edit wrangler.toml (scheduler)
+        working-directory: apps/scheduler
+        run: |
+          mv ./wrangler.toml.sample ./wrangler.toml
+          sed -i 's|<YOUR_DB_ID>|${{ secrets.CF_DB_ID }}|' ./wrangler.toml
+          sed -i 's|<YOUR_WEB_URL>|${{ secrets.CF_WEB_URL }}|' ./wrangler.toml
+          sed -i 's|<YOUR_WEBHOOK_URL>|${{ secrets.SLACK_WEBHOOK_URL }}|' ./wrangler.toml
+
+      - name: Deploy (scheduler)
+        uses: cloudflare/wrangler-action@v3
+        with:
+          workingDirectory: apps/scheduler
+          accountId: ${{ secrets.CF_ACCOUNT_ID }}
+          apiToken: ${{ secrets.CF_API_TOKEN }}
+
+      - name: Edit wrangler.toml (shortcut)
+        working-directory: apps/shortcut
+        run: |
+          mv ./wrangler.toml.sample ./wrangler.toml
+          sed -i 's|<YOUR_DB_ID>|${{ secrets.CF_DB_ID }}|' ./wrangler.toml
+
+      - name: Deploy (shortcut)
+        uses: cloudflare/wrangler-action@v3
+        with:
+          workingDirectory: apps/shortcut
+          accountId: ${{ secrets.CF_ACCOUNT_ID }}
+          apiToken: ${{ secrets.CF_API_TOKEN }}
+
+      - name: Edit wrangler.toml (web)
+        working-directory: apps/web
+        run: |
+          mv ./wrangler.toml.sample ./wrangler.toml
+          sed -i 's|<YOUR_DB_ID>|${{ secrets.CF_DB_ID }}|' ./wrangler.toml
+
+      - name: Deploy (web)
+        uses: cloudflare/wrangler-action@v3
+        with:
+          workingDirectory: apps/web
+          accountId: ${{ secrets.CF_ACCOUNT_ID }}
+          apiToken: ${{ secrets.CF_API_TOKEN }}
