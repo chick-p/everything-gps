@@ -1,29 +1,9 @@
-import { Hono } from "hono";
-
-import api from "./api";
 import type { Bindings } from "./types";
 import { sendSlackMessage } from "./slack";
-
-const app = new Hono<{ Bindings: Bindings }>();
-
-app.route("/api", api);
-
-const appName = "everything-gps";
-
-app.get("/", async (c) => {
-  return c.json(
-    {
-      message: `Hello, ${appName}!`,
-    },
-    200,
-  );
-});
+import { getLocationSize } from "./locations";
 
 const scheduled = async (_batch: number, env: Bindings) => {
-  const res = await app.request("/api/locations/size", {}, env);
-  const { size } = await res.json<{
-    size: number;
-  }>();
+  const size = await getLocationSize(env.DB);
   if (size !== 0) {
     await sendSlackMessage({
       url: env.SLACK_WEBHOOK_URL,
@@ -33,6 +13,8 @@ const scheduled = async (_batch: number, env: Bindings) => {
 };
 
 export default {
-  fetch: app.fetch,
+  fetch: async () => {
+    return new Response("OK", { status: 200 });
+  },
   scheduled,
 };
