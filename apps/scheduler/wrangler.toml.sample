@@ -12,6 +12,6 @@ migrations_dir = "drizzle/migrations"
 SLACK_WEBHOOK_URL = "<YOUR_WEBHOOK_URL>"
 EVERYTHING_GPS_WEB_URL = "<YOUR_WEB_URL>"
 
-# every Saturday at 9am
+# every Saturday at 9am JST (0am UTC)
 [triggers]
-crons = ["0 9 * * 6"]
+crons = ["0 0 * * SAT"]
