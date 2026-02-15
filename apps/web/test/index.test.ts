@@ -22,7 +22,7 @@ describe("Call API", async () => {
     expect(res.status).toBe(200);
     const data = await res.json();
     expect(data).toMatchObject([
-      { id: 1, name: "Himeji Castle", lat: 34.8394324, lng: 134.693894 },
+      { id: 1, name: "Himeji Castle", lat: "34.8394324", lng: "134.693894" },
     ]);
   });
 });
