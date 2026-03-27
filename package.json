@@ -24,11 +24,11 @@
     "@eslint/js": "^10.0.1",
     "@hono/vite-cloudflare-pages": "^0.4.3",
     "@hono/vite-dev-server": "^0.25.1",
-    "eslint": "^10.0.3",
+    "eslint": "^10.1.0",
     "eslint-config-prettier": "^10.1.8",
     "npm-run-all2": "^8.0.4",
     "prettier": "^3.8.1",
-    "typescript-eslint": "^8.57.1",
+    "typescript-eslint": "^8.57.2",
     "vite": "^7.3.1",
     "vitest": "^4.1.0",
     "wrangler": "^4.76.0"
