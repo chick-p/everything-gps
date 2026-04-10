@@ -16,7 +16,7 @@ importers:
         version: 0.31.10
       drizzle-orm:
         specifier: ^0.45.2
-        version: 0.45.2(@cloudflare/workers-types@4.20260404.1)(@libsql/client-wasm@0.14.0)(gel@2.0.1)
+        version: 0.45.2(@cloudflare/workers-types@4.20260410.1)(@libsql/client-wasm@0.14.0)(gel@2.0.1)
       hono:
         specifier: ^4.12.12
         version: 4.12.12
@@ -25,8 +25,8 @@ importers:
         version: 4.3.6
     devDependencies:
       '@cloudflare/workers-types':
-        specifier: ^4.20260404.1
-        version: 4.20260404.1
+        specifier: ^4.20260410.1
+        version: 4.20260410.1
       '@eslint/js':
         specifier: ^10.0.1
         version: 10.0.1(eslint@10.1.0)
@@ -35,7 +35,7 @@ importers:
         version: 0.4.3(hono@4.12.12)
       '@hono/vite-dev-server':
         specifier: ^0.25.1
-        version: 0.25.1(hono@4.12.12)(miniflare@4.20260317.3)(wrangler@4.78.0(@cloudflare/workers-types@4.20260404.1))
+        version: 0.25.1(hono@4.12.12)(miniflare@4.20260317.3)(wrangler@4.78.0(@cloudflare/workers-types@4.20260410.1))
       eslint:
         specifier: ^10.1.0
         version: 10.1.0
@@ -59,7 +59,7 @@ importers:
         version: 4.1.2(vite@8.0.5(@emnapi/core@1.9.1)(@emnapi/runtime@1.9.2)(esbuild@0.27.7)(tsx@4.21.0))
       wrangler:
         specifier: ^4.78.0
-        version: 4.78.0(@cloudflare/workers-types@4.20260404.1)
+        version: 4.78.0(@cloudflare/workers-types@4.20260410.1)
 
   apps/scheduler: {}
 
@@ -112,8 +112,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@cloudflare/workers-types@4.20260404.1':
-    resolution: {integrity: sha512-jfZfktdn3D0ceA59i4lkMgPUR9p5Wd6trtNLQR1RTgF59iVt9/yegkiEZv0TQvJPXlmQOU1D0pAYz7cMztqErg==}
+  '@cloudflare/workers-types@4.20260410.1':
+    resolution: {integrity: sha512-dPZT4aXxwhGHFhWA9iZhWVfFoO8g9exiLzeaS8y43Dw0Sard6Gb3o5LJjReav3ejHbQLHUfGEiZsRPGW8qmgMg==}
 
   '@cspotcode/source-map-support@0.8.1':
     resolution: {integrity: sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==}
@@ -2033,7 +2033,7 @@ snapshots:
   '@cloudflare/workerd-windows-64@1.20260317.1':
     optional: true
 
-  '@cloudflare/workers-types@4.20260404.1': {}
+  '@cloudflare/workers-types@4.20260410.1': {}
 
   '@cspotcode/source-map-support@0.8.1':
     dependencies:
@@ -2409,14 +2409,14 @@ snapshots:
     dependencies:
       hono: 4.12.12
 
-  '@hono/vite-dev-server@0.25.1(hono@4.12.12)(miniflare@4.20260317.3)(wrangler@4.78.0(@cloudflare/workers-types@4.20260404.1))':
+  '@hono/vite-dev-server@0.25.1(hono@4.12.12)(miniflare@4.20260317.3)(wrangler@4.78.0(@cloudflare/workers-types@4.20260410.1))':
     dependencies:
       '@hono/node-server': 1.19.11(hono@4.12.12)
       hono: 4.12.12
       minimatch: 9.0.9
     optionalDependencies:
       miniflare: 4.20260317.3
-      wrangler: 4.78.0(@cloudflare/workers-types@4.20260404.1)
+      wrangler: 4.78.0(@cloudflare/workers-types@4.20260410.1)
 
   '@hono/zod-validator@0.7.6(hono@4.12.12)(zod@4.3.6)':
     dependencies:
@@ -2842,9 +2842,9 @@ snapshots:
       esbuild: 0.25.12
       tsx: 4.21.0
 
-  drizzle-orm@0.45.2(@cloudflare/workers-types@4.20260404.1)(@libsql/client-wasm@0.14.0)(gel@2.0.1):
+  drizzle-orm@0.45.2(@cloudflare/workers-types@4.20260410.1)(@libsql/client-wasm@0.14.0)(gel@2.0.1):
     optionalDependencies:
-      '@cloudflare/workers-types': 4.20260404.1
+      '@cloudflare/workers-types': 4.20260410.1
       '@libsql/client-wasm': 0.14.0
       gel: 2.0.1
 
@@ -3490,7 +3490,7 @@ snapshots:
       '@cloudflare/workerd-linux-arm64': 1.20260317.1
       '@cloudflare/workerd-windows-64': 1.20260317.1
 
-  wrangler@4.78.0(@cloudflare/workers-types@4.20260404.1):
+  wrangler@4.78.0(@cloudflare/workers-types@4.20260410.1):
     dependencies:
       '@cloudflare/kv-asset-handler': 0.4.2
       '@cloudflare/unenv-preset': 2.16.0(unenv@2.0.0-rc.24)(workerd@1.20260317.1)
@@ -3501,7 +3501,7 @@ snapshots:
       unenv: 2.0.0-rc.24
       workerd: 1.20260317.1
     optionalDependencies:
-      '@cloudflare/workers-types': 4.20260404.1
+      '@cloudflare/workers-types': 4.20260410.1
       fsevents: 2.3.3
     transitivePeerDependencies:
       - bufferutil
