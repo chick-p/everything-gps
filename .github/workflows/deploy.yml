@@ -42,7 +42,7 @@ jobs:
           sed -i 's|<YOUR_WEBHOOK_URL>|${{ secrets.SLACK_WEBHOOK_URL }}|' ./wrangler.toml
 
       - name: Deploy (scheduler)
-        uses: cloudflare/wrangler-action@v3
+        uses: cloudflare/wrangler-action@v4
         with:
           workingDirectory: apps/scheduler
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
@@ -55,7 +55,7 @@ jobs:
           sed -i 's|<YOUR_DB_ID>|${{ secrets.CF_DB_ID }}|' ./wrangler.toml
 
       - name: Deploy (shortcut)
-        uses: cloudflare/wrangler-action@v3
+        uses: cloudflare/wrangler-action@v4
         with:
           workingDirectory: apps/shortcut
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
@@ -72,7 +72,7 @@ jobs:
         run: pnpm build
 
       - name: Deploy (web)
-        uses: cloudflare/wrangler-action@v3
+        uses: cloudflare/wrangler-action@v4
         with:
           workingDirectory: apps/web
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
