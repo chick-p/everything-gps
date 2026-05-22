@@ -26,7 +26,7 @@
     "@hono/vite-dev-server": "^0.25.3",
     "eslint": "^10.4.0",
     "eslint-config-prettier": "^10.1.8",
-    "npm-run-all2": "^8.0.4",
+    "npm-run-all2": "^9.0.0",
     "prettier": "^3.8.3",
     "typescript-eslint": "^8.59.4",
     "vite": "^8.0.14",
