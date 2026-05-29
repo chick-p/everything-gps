@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@hono/zod-validator':
         specifier: ^0.8.0
-        version: 0.8.0(hono@4.12.22)(zod@4.4.3)
+        version: 0.8.0(hono@4.12.23)(zod@4.4.3)
       drizzle-kit:
         specifier: ^0.31.10
         version: 0.31.10
@@ -18,8 +18,8 @@ importers:
         specifier: ^0.45.2
         version: 0.45.2(@cloudflare/workers-types@4.20260529.1)(@libsql/client-wasm@0.14.0)(gel@2.0.1)
       hono:
-        specifier: ^4.12.22
-        version: 4.12.22
+        specifier: ^4.12.23
+        version: 4.12.23
       zod:
         specifier: ^4.4.3
         version: 4.4.3
@@ -32,10 +32,10 @@ importers:
         version: 10.0.1(eslint@10.4.0)
       '@hono/vite-cloudflare-pages':
         specifier: ^0.4.3
-        version: 0.4.3(hono@4.12.22)
+        version: 0.4.3(hono@4.12.23)
       '@hono/vite-dev-server':
-        specifier: ^0.25.3
-        version: 0.25.3(hono@4.12.22)(miniflare@4.20260521.0)(wrangler@4.94.0(@cloudflare/workers-types@4.20260529.1))
+        specifier: ^0.26.0
+        version: 0.26.0(hono@4.12.23)(miniflare@4.20260521.0)(wrangler@4.94.0(@cloudflare/workers-types@4.20260529.1))
       eslint:
         specifier: ^10.4.0
         version: 10.4.0
@@ -790,8 +790,8 @@ packages:
     peerDependencies:
       hono: '*'
 
-  '@hono/vite-dev-server@0.25.3':
-    resolution: {integrity: sha512-w3uQ0KQF0i/SDcJ6+d5njEFTr6pbolajrt/GxV0pliYL+4ywiBqiOFRWSpwW3mTuZ80boww7+ZxJTGTBIzyBQg==}
+  '@hono/vite-dev-server@0.26.0':
+    resolution: {integrity: sha512-DYHht1lge/SRGd1dpOgwhS6DpamSaDtxAOlwl2RkcYyLFy769DZPEX6CeRaUzeDNgClO9JAuT83VptxB5mH5jA==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
       hono: '*'
@@ -1244,8 +1244,8 @@ packages:
   blake3-wasm@2.1.5:
     resolution: {integrity: sha512-F1+K8EbfOZE49dtoPtmxUQrpXaBIl3ICvasLh+nJta0xkz+9kF/7uet9fLnwKqhDrmj6g+6K3Tw9yQPUg2ka5g==}
 
-  brace-expansion@2.1.0:
-    resolution: {integrity: sha512-TN1kCZAgdgweJhWWpgKYrQaMNHcDULHkWwQIspdtjV4Y5aurRdZpjAqn6yX3FPqTA9ngHCc4hJxMAMgGfve85w==}
+  brace-expansion@2.1.1:
+    resolution: {integrity: sha512-WR1cURNjuvBLMZBMbqM0UoE+WAfdUcEV1ccD8PVBVOI+Z3ND4+SZbN8RsfT2bMuG1qwz5RFvPukSZm5fF2D5eA==}
 
   brace-expansion@5.0.6:
     resolution: {integrity: sha512-kLpxurY4Z4r9sgMsyG0Z9uzsBlgiU/EFKhj/h91/8yHu0edo7XuixOIH3VcJ8kkxs6/jPzoI6U9Vj3WqbMQ94g==}
@@ -1520,8 +1520,8 @@ packages:
     resolution: {integrity: sha512-XxwI8EOhVQgWp6iDL+3b0r86f4d6AX6zSU55HfB4ydCEuXLXc5FcYeOu+nnGftS4TEju/11rt4KJPTMgbfmv4A==}
     engines: {node: '>=10.13.0'}
 
-  hono@4.12.22:
-    resolution: {integrity: sha512-7fvVPbB92zNRsQke+uiRGwtTuef0tB2Dg4hWxYfFNvkQhIltWoyi0ONReM5LWA+jJWS3nfT5lTq+qbsIpX0IQw==}
+  hono@4.12.23:
+    resolution: {integrity: sha512-eIaZ9qDgu7XV0pxOCrg7/WhnQ6Ivm22UcxhXx/A3dcbqbbYgBEkc6e/J/s7j2tS96zoB0S9VBdLwQNCWwUo4LA==}
     engines: {node: '>=16.9.0'}
 
   ignore@5.3.2:
@@ -2427,26 +2427,26 @@ snapshots:
       '@eslint/core': 1.2.1
       levn: 0.4.1
 
-  '@hono/node-server@1.19.14(hono@4.12.22)':
+  '@hono/node-server@1.19.14(hono@4.12.23)':
     dependencies:
-      hono: 4.12.22
+      hono: 4.12.23
 
-  '@hono/vite-cloudflare-pages@0.4.3(hono@4.12.22)':
+  '@hono/vite-cloudflare-pages@0.4.3(hono@4.12.23)':
     dependencies:
-      hono: 4.12.22
+      hono: 4.12.23
 
-  '@hono/vite-dev-server@0.25.3(hono@4.12.22)(miniflare@4.20260521.0)(wrangler@4.94.0(@cloudflare/workers-types@4.20260529.1))':
+  '@hono/vite-dev-server@0.26.0(hono@4.12.23)(miniflare@4.20260521.0)(wrangler@4.94.0(@cloudflare/workers-types@4.20260529.1))':
     dependencies:
-      '@hono/node-server': 1.19.14(hono@4.12.22)
-      hono: 4.12.22
+      '@hono/node-server': 1.19.14(hono@4.12.23)
+      hono: 4.12.23
       minimatch: 9.0.9
     optionalDependencies:
       miniflare: 4.20260521.0
       wrangler: 4.94.0(@cloudflare/workers-types@4.20260529.1)
 
-  '@hono/zod-validator@0.8.0(hono@4.12.22)(zod@4.4.3)':
+  '@hono/zod-validator@0.8.0(hono@4.12.23)(zod@4.4.3)':
     dependencies:
-      hono: 4.12.22
+      hono: 4.12.23
       zod: 4.4.3
 
   '@humanfs/core@0.19.2':
@@ -2835,7 +2835,7 @@ snapshots:
 
   blake3-wasm@2.1.5: {}
 
-  brace-expansion@2.1.0:
+  brace-expansion@2.1.1:
     dependencies:
       balanced-match: 1.0.2
 
@@ -3122,7 +3122,7 @@ snapshots:
     dependencies:
       is-glob: 4.0.3
 
-  hono@4.12.22: {}
+  hono@4.12.23: {}
 
   ignore@5.3.2: {}
 
@@ -3242,7 +3242,7 @@ snapshots:
 
   minimatch@9.0.9:
     dependencies:
-      brace-expansion: 2.1.0
+      brace-expansion: 2.1.1
 
   ms@2.1.3: {}
 

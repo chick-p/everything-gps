@@ -16,14 +16,14 @@
     "@hono/zod-validator": "^0.8.0",
     "drizzle-kit": "^0.31.10",
     "drizzle-orm": "^0.45.2",
-    "hono": "^4.12.22",
+    "hono": "^4.12.23",
     "zod": "^4.4.3"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20260529.1",
     "@eslint/js": "^10.0.1",
     "@hono/vite-cloudflare-pages": "^0.4.3",
-    "@hono/vite-dev-server": "^0.25.3",
+    "@hono/vite-dev-server": "^0.26.0",
     "eslint": "^10.4.0",
     "eslint-config-prettier": "^10.1.8",
     "npm-run-all2": "^9.0.1",
