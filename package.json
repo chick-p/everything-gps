@@ -1,6 +1,7 @@
 {
   "name": "everything-gps",
   "description": "Everything to gps",
+  "packageManager": "pnpm@11.9.0",
   "private": true,
   "type": "module",
   "scripts": {
