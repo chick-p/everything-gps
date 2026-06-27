@@ -18,11 +18,9 @@ jobs:
       - uses: actions/checkout@v7
 
       - uses: pnpm/action-setup@v6
-        with:
-          version: 10
 
       - name: Install dependencies
-        run: pnpm install --shamefully-hoist
+        run: pnpm install
         env:
           CI: true
 
