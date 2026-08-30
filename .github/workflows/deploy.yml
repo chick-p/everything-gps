@@ -15,9 +15,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
-      - uses: pnpm/action-setup@v6
+      - uses: pnpm/action-setup@0977fd99725f1db4007ccb2928dbb4e90d06cc86 # v6.0.10
 
       - name: Install dependencies
         run: pnpm install
@@ -40,7 +40,7 @@ jobs:
           sed -i 's|<YOUR_WEBHOOK_URL>|${{ secrets.SLACK_WEBHOOK_URL }}|' ./wrangler.toml
 
       - name: Deploy (scheduler)
-        uses: cloudflare/wrangler-action@v4
+        uses: cloudflare/wrangler-action@ebbaa1584979971c8614a24965b4405ff95890e0 # v4.0.0
         with:
           workingDirectory: apps/scheduler
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
@@ -53,7 +53,7 @@ jobs:
           sed -i 's|<YOUR_DB_ID>|${{ secrets.CF_DB_ID }}|' ./wrangler.toml
 
       - name: Deploy (shortcut)
-        uses: cloudflare/wrangler-action@v4
+        uses: cloudflare/wrangler-action@ebbaa1584979971c8614a24965b4405ff95890e0 # v4.0.0
         with:
           workingDirectory: apps/shortcut
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
@@ -70,7 +70,7 @@ jobs:
         run: pnpm build
 
       - name: Deploy (web)
-        uses: cloudflare/wrangler-action@v4
+        uses: cloudflare/wrangler-action@ebbaa1584979971c8614a24965b4405ff95890e0 # v4.0.0
         with:
           workingDirectory: apps/web
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
