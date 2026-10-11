@@ -14,6 +14,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "@hono/cloudflare-workers": "^1.0.1",
     "@hono/zod-validator": "^0.9.1",
     "drizzle-kit": "^0.31.11",
     "drizzle-orm": "^0.45.3",

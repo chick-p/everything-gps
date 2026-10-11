@@ -1,5 +1,5 @@
 import { Hono } from "hono";
-import { serveStatic } from "hono/cloudflare-workers";
+import { serveStatic } from "@hono/cloudflare-workers";
 import manifest from "__STATIC_CONTENT_MANIFEST";
 
 import { Home } from "./home";
