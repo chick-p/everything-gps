@@ -10,10 +10,10 @@ importers:
     dependencies:
       '@hono/cloudflare-workers':
         specifier: ^1.0.1
-        version: 1.0.1(hono@4.13.13)
+        version: 1.0.1(hono@4.13.14)
       '@hono/zod-validator':
         specifier: ^0.9.1
-        version: 0.9.1(hono@4.13.13)(zod@4.6.7)
+        version: 0.9.1(hono@4.13.14)(zod@4.6.7)
       drizzle-kit:
         specifier: ^0.31.11
         version: 0.31.11
@@ -21,8 +21,8 @@ importers:
         specifier: ^0.45.4
         version: 0.45.4(@cloudflare/workers-types@5.20261019.1)(@libsql/client-wasm@0.14.0)(gel@2.0.1)
       hono:
-        specifier: ^4.13.13
-        version: 4.13.13
+        specifier: ^4.13.14
+        version: 4.13.14
       zod:
         specifier: ^4.6.7
         version: 4.6.7
@@ -35,10 +35,10 @@ importers:
         version: 10.0.1(eslint@10.13.0)
       '@hono/vite-cloudflare-pages':
         specifier: ^0.4.3
-        version: 0.4.3(hono@4.13.13)
+        version: 0.4.3(hono@4.13.14)
       '@hono/vite-dev-server':
         specifier: ^0.26.1
-        version: 0.26.1(hono@4.13.13)(miniflare@4.20260722.0)(wrangler@4.151.1(@cloudflare/workers-types@5.20261019.1))
+        version: 0.26.1(hono@4.13.14)(miniflare@4.20260722.0)(wrangler@4.151.1(@cloudflare/workers-types@5.20261019.1))
       eslint:
         specifier: ^10.13.0
         version: 10.13.0
@@ -1578,8 +1578,8 @@ packages:
     resolution: {integrity: sha512-iZyKG96/JwPz1N55vj2Ie2vXbhu440zfUfJvSwEqEbeLluk7NnapfGqa7LH0mOsnDxTF85Mx8/dyR6HfqcbmbQ==}
     engines: {node: '>=20'}
 
-  hono@4.13.13:
-    resolution: {integrity: sha512-CQ46U0ZkAGmbT/4UxdzzGJpacP2IeKgY4a5/tOI9AABbpOMfK739wfDXmv1usCk+3RkKj1hQy4/fjhiwa2xlrA==}
+  hono@4.13.14:
+    resolution: {integrity: sha512-yhRLQ21U6qa9Hsu2N7Qcbh8tE+WKEcoErjIo56LeSGiGXGp9sA7UpE86Ui9uexb61KakiGwuHMn2QdV7w6i6kQ==}
     engines: {node: '>=16.9.0'}
 
   hookified@1.15.1:
@@ -1619,8 +1619,8 @@ packages:
     resolution: {integrity: sha512-FFUtZMpoZ8RqHS3XeXEmHWLA4thH+ZxCv2lOiPIn1Xc7CxrqhWzNSDzD+/chS/zbYezmiwWLdQC09JdQKmthOw==}
     engines: {node: '>=20'}
 
-  js-base64@3.9.4:
-    resolution: {integrity: sha512-PtOMXpEGuP0RRiRXsjzHzl44dMHxSu2CPvAhinupR1tBa88me+1DPqsobl7eupn5UukjLkln1ZnAOAOXOrYG0Q==}
+  js-base64@3.9.5:
+    resolution: {integrity: sha512-u0CFDUca8BbBRkMkF/fDcuoLCx9nTNbXdVtbjVnBqySA9E221u0uYKbACiYGOEk1heY69qM4caeX3OwjSyxevw==}
 
   json-parse-even-better-errors@6.0.0:
     resolution: {integrity: sha512-2/8adwnK1/+Fdjyts4r6wSpfANWw8zdNhU9U/Llk59c6O+DjSisPWPykwoL8gZmocP9Dy64S7oie2g+Mia123A==}
@@ -2436,30 +2436,30 @@ snapshots:
       '@eslint/core': 1.2.1
       levn: 0.4.1
 
-  '@hono/cloudflare-workers@1.0.1(hono@4.13.13)':
+  '@hono/cloudflare-workers@1.0.1(hono@4.13.14)':
     dependencies:
-      hono: 4.13.13
+      hono: 4.13.14
 
-  '@hono/node-server@1.19.14(hono@4.13.13)':
+  '@hono/node-server@1.19.14(hono@4.13.14)':
     dependencies:
-      hono: 4.13.13
+      hono: 4.13.14
 
-  '@hono/vite-cloudflare-pages@0.4.3(hono@4.13.13)':
+  '@hono/vite-cloudflare-pages@0.4.3(hono@4.13.14)':
     dependencies:
-      hono: 4.13.13
+      hono: 4.13.14
 
-  '@hono/vite-dev-server@0.26.1(hono@4.13.13)(miniflare@4.20260722.0)(wrangler@4.151.1(@cloudflare/workers-types@5.20261019.1))':
+  '@hono/vite-dev-server@0.26.1(hono@4.13.14)(miniflare@4.20260722.0)(wrangler@4.151.1(@cloudflare/workers-types@5.20261019.1))':
     dependencies:
-      '@hono/node-server': 1.19.14(hono@4.13.13)
-      hono: 4.13.13
+      '@hono/node-server': 1.19.14(hono@4.13.14)
+      hono: 4.13.14
       minimatch: 9.0.9
     optionalDependencies:
       miniflare: 4.20260722.0
       wrangler: 4.151.1(@cloudflare/workers-types@5.20261019.1)
 
-  '@hono/zod-validator@0.9.1(hono@4.13.13)(zod@4.6.7)':
+  '@hono/zod-validator@0.9.1(hono@4.13.14)(zod@4.6.7)':
     dependencies:
-      hono: 4.13.13
+      hono: 4.13.14
       zod: 4.6.7
 
   '@humanfs/core@0.19.2':
@@ -2713,12 +2713,12 @@ snapshots:
   '@libsql/client-wasm@0.14.0':
     dependencies:
       '@libsql/core': 0.14.0
-      js-base64: 3.9.4
+      js-base64: 3.9.5
     optional: true
 
   '@libsql/core@0.14.0':
     dependencies:
-      js-base64: 3.9.4
+      js-base64: 3.9.5
     optional: true
 
   '@oxc-project/types@0.154.0': {}
@@ -3196,7 +3196,7 @@ snapshots:
     dependencies:
       hookified: 1.15.1
 
-  hono@4.13.13: {}
+  hono@4.13.14: {}
 
   hookified@1.15.1: {}
 
@@ -3221,7 +3221,7 @@ snapshots:
 
   isexe@4.0.0: {}
 
-  js-base64@3.9.4:
+  js-base64@3.9.5:
     optional: true
 
   json-parse-even-better-errors@6.0.0: {}
